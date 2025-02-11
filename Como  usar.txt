@@ -1,0 +1,434 @@
+~Sparking Studio Made by HiroTex~
+
+The first you should do is install an AFL list for your AFS.
+Many AFL Lists are available in the "AFL List" folder for all versions of the Sparking! / Budokai Tenkaichi series.
+The folder contains a patch to rename the files with the actual official filenames recreated with their original extensions.
+All versions are supported by Sparking Studio, since it needs to reed some filenames to work properly with some files.
+
+- How to Install AFL Lists -
+To install them, use AFS Explorer, open the AFS, go to "Advanced" and select "Import File Name List", then select the
+appropriate AFL for your version and AFS.
+
+Content:
+	1. How to Open Files
+		a. How to Open a File
+		b. What Files are Supported
+	2. How to Save Files
+		a. How to make a Quick Save
+		b. How to Save a New File
+	3. How to Unpack Files
+		a. How to Unpack a Single File
+		b. How to Unpack many Files at once
+	4. How to Package Folders
+		a. How to Package a Single Folder
+		b. How to Package many Folders at once
+	5. How to Uncompress Files
+		a. How to Unompress a Single File
+		b. How to Unompress many Files at once
+	6. How to Compress Files
+		a. How to Compress a Single File
+		b. How to Compress many Files at once
+	7. DBT Editor
+		a. How to Export Images to PNG
+		b. How to Export Images to Indexed BMPs
+		c. How to Import an Image over another
+		d. How to Delete an Image
+		e. How to Add a New Image
+		f. About cdbt files
+		g. How to Delete single Palettes or Shadings
+	8. Model Editor
+		a. How to Open a Character Model File
+		b. About the Header Editor
+		c. About the "PMDL 3D Parts" Zone
+		d. About the "PMDL 3D Part Data" Zone
+		e. About the "Mesh" Zone
+		f. About the "Skirt Mesh" Zone
+		g. About the "Convert to Obj" Zone
+		h. About the Map's 3D Model Data
+		i. About the Map's Import File Option
+	9. VAG Audio Editor
+		a. How to open a VAG Sound Container
+		b. How to Change the Sampling Frequency of a Vag Audio
+		c. How to Export a Vag Audio to a File.
+		d. How to Export all Vag Audios from the File to a Folder
+		e. How to Import a Vag Audio to the VAG Container
+		f. How to Import all audios from a folder into the VAG Container.
+	10. About the Settings Menu
+		a. How to change the Settings
+		
+
+
+1.a How to Open a File
+	To open a File, click the "File" button and select the "Open..." option, 
+	you can Drag & Drop the file in the program too, or open Sparking Studio by double clicking your file
+	and selecting Sparking Studio as its default Program.
+	The file you want to edit may need to be Unpacked first, see section 3 for Unpacking Files.
+	
+1.b What Files are Supported
+	As of this buiild, the following files are supported:
+	.anm Files = Animation files can be opened to fix the animation selected Height or an Effect's height position.
+	.snd Files = The 01_header_data.snd from inside the Character_Voice.pak file can be opened to manage the vag audios.
+	.dbt Files = "Image container" files of the Sparking Series.
+	.dat Files = Data Files that contain Binary parameters. Note: Only certain dat files can be opened with the tool.
+	.mdl Files = Model container Files. The Character's Model file, Extra Faces files, and the Map's main data model file can be opened.
+	.afl Files = AFS Name List Files. Just a Text Editor. Names of files must not surpass 31 characters.
+	.canm Files = Same as .anm files but compressed.
+	.cdbt Files = Compressed "Image container" files of the Sparking Series. You don't have to decompress or compress them manually anymore.
+	
+	The '.dat' files supported are the next ones:
+
+	Character Files:
+	- 017_character_param.dat
+	- 018_character_melee_param.dat
+	- 019_character_ki_blast_param.dat
+	- 020_character_movement_param.dat
+	- 021_character_voice_speaker.dat
+	- 023_character_blast_2_param.dat
+	- 024_character_blast_1_param.dat
+	- 027_character_cameras.dat
+	
+	General Menu FIles:
+	- XX_z_item_param.dat
+	- XX_chara_order.dat
+	- XX_maps_order.dat
+	- XX_songs_order.dat
+	
+	resident_battle_param:
+	- 007_common_character_param.dat
+
+	resident_chara_param:
+	- 00_chara_param.dat
+
+	01_ultimate_missions:
+	- 09_mission_param.dat
+	- 10_mission_opponent_param.dat
+	- 11_survivor_param.dat
+	- 12_survivor_opponent_param.dat
+
+	Ultimate_Ranking:
+	- 07_rank_param.dat
+	- 08_rank_challenge_param.dat
+	- 09_rank_opponent_param.dat
+	- 10_rank_opponent_challenge_param.dat
+
+	Ultimate_Circuit:
+	- 07_circuit_param.dat
+	- 08_circuit_opponent_param.dat
+
+	Ultimte_Sim:
+	- 24_sim_param.dat
+	- 25_sim_opponent_param.dat
+
+	WorldTour:
+	- 30_opponent_param.dat
+	- 40_unlock_item_param.dat
+
+	00_char_ref_main:
+	- 25_chichi_comment_id_param.dat
+	- 26_chichi_comment_anim.dat
+	- 27_chichi_comment_slot_param.dat
+
+	Budokai Tenkaichi 2
+	- progress_chara_param.dat
+	
+	
+2.a How to Make a Quick Save
+	After you have opened a File, select the "disk" icon below the "File" option to overwrite 
+	the original file opened and save the changes you have made.
+	
+2.b How to Save a New File
+	After you have opened a File, if you want to keep a Backup of the original file, click the 
+	"File" button and select the "Save As..." option to create a new File and save the changes. 
+	The subsequent changes that you make to the file will be saved in the new File with the 
+	"Quick Save" option.
+	
+3.a How to Unpack a Single File
+	To Unpack a File, click on the "Packing" Button and select the "Unpack" option, then select 
+	the ".pak" or ".cpak" file that you want to unpack. A new Folder with the content of the 
+	file will be created next to it.
+
+3.b How to Unpack many Files at once
+	To Unpack multiple files you have to click on the "Packing" button and select the 
+	"Unpack All Files" option (all of your ".pak" or ".cpak" Files have to be together 
+	in a folder), then select the folder where all of your .pak or .cpak files are. 
+	You will get a confirmation message after all of them are unpacked.
+	
+4.a How to Package a Single Folder
+	To Pack a Folder, click on the "Packing" Button and select the "Make Pak" option, 
+	then select the "type.hep" file inside the folder that you want to package again. 
+	This will create or overwrite a file with the same name of the folder next to the 
+	selected folder.
+
+4.b How to Package many Folders at once
+	To Package multiple folders you have to click on the "Packing" button and select 
+	the "Package All Folders" option (all of your Folders have to be together in a folder, 
+	and all of them must contain a "type.hep" file), then select the folder where all of 
+	your folders are. You will get a confirmation message when the process has finished
+	
+5.a How to Decompress a Single File
+	To Decompress a File, click on the "Encryption" Button and select the "Decompress" 
+	option, then select the ".cpak"/".cdbt"/".canm" file that you want to Decompress. 
+	A new File with the uncompressed content of the file will be created next to it 
+	with the correct uncompressed extension.
+
+5.b How to Decompress many Files at once
+	To Decompress multiple files you have to click on the "Encryption" button and select 
+	the "Decompress All Files" option (all of your ".cpak"/".cdbt"/".canm" Files have to 
+	be together in a folder), then select the folder where all of your compressed files 
+	are. You will get a confirmation message when the process has finished.
+	
+6.a How to Compress a Single File
+	To Compress a File, click on the "Encryption" Button and select the "Compress" option, 
+	then select the ".pak"/".dbt"/".anm" file that you want to Compress. A new File with 
+	the compressed content of the file will be created next to it with the correct 
+	compressed extension.
+
+6.b How to Compress many Files at once
+	To Compress multiple files you have to click on the "Encryption" button and select the 
+	"Compress All Files" option (all of your ".pak"/".dbt"/".anm" Files have to be together
+	 in a folder), then select the folder where all of your uncompressed files are. You 
+	 will get a confirmation message when the process has finished.
+	
+7. About the DBT Editor
+	The "DBT Editor" is the Image editor for ".dbt" or ".cdbt" files. It has support for 
+	viewing, exporting and importing images to all kind of dbt files, incluiding BT1, 
+	BT2 and BT3 files. The "map_main_data.mdl" File from the Maps is supported too, 
+	but some features are not available.
+	
+7.a How to Export Images to PNG
+	To Export PNG Images from a dbt file first open the File, when the editor has loaded 
+	click the "Export All (.png)" option. This will create a folder next to the file with 
+	the same name with all of the images in PNG format.
+	
+7.b How to Export Images to Indexed BMP
+	To Export indexed BMP Images from a dbt file first open the File, when the editor has 
+	loaded click the "Export All (.bmp)" option. This will create a folder next to the file 
+	with the same name with all of the images in a indexed BMP format.
+	
+7.c How to Import an image over another
+	To do this you need the software "PNGOo", a program for indexing png images. First, 
+	open your dbt file, and then select the image that you want to replace. Click on the 
+	"Import Img" button and select your Indexed PNG image or BMP image.
+	If the image is not indexed, or was not indexed to the correct amount of colors, or the 
+	dimensions does not match, the tool will tell you with a message.
+	If PNGOo doesn't index the file to the right amount of colours, you will have to index it 
+	with the option "Export for Web" from Photoshop and make sure that the options are "PNG-8" 
+	and the palette list is filled with the amount of colours that the image should 
+	have (16 colors or 256 colors).
+	
+7.d How to Delete an image
+	To delete an image select it from the list of images and click the "Delete Img" button.
+	
+7.e How to Add a New Image
+	To do this you need the software "PNGOo", a program for indexing png images. First,
+	open your dbt file, and then select the last image of the file, before the "Shadings".
+	Click on the "Add a New Image Below" button and select your Indexed PNG image or BMP image.
+	If the image is not indexed, the tool will tell you with a message.
+	
+7.f About cdbt files
+	The Latest version of Sparking Studio supports cdbt files to be opened like dbt files, 
+	you don't have to manually decompress them for loading them or compress them after 
+	saving it, the Sparking Studio will automatically decompress and compress them "on the fly".
+	
+7.g How to delete single palletes or Shadings
+	The Latest version of Sparking Studio can delete single palettes or Shadings by using 
+	the "Delete Palette" button. Just select the palette that you want to delete and click 
+	the button.
+	
+8.a How to Open a Character Model File
+	To open a character's model, you have to unpack the .pak file of the character you want, 
+	then, open the "002_character_model.mdl" file.
+	The Model Editor has 9 Zones:
+	- Header Editor = An editor for some header values.
+	- Bone List = The main model part selector.
+	- PMDL 3D Parts  = Buttons to manage the selected model in Bone List.
+	- PMDL 3D Part Data = Data of the selected model in Bone LIst.
+	- Mesh List = A Selector of the various meshes that composes the model part selected.
+	- Mesh = Various buttons to manage the Mesh List.
+	- External Format = Various buttons to manage the model in "ascii (XPS/XNALara)", "obj", and "dae" format.
+	- Skirt Meshes = List of Meshes of the special Skirt model part.
+	- Skirt Mesh = Various Buttons to manage the special Skirt model part.
+	
+8.b About the Header Editor
+	The Model's Header contains some data to know about:
+	- Bone Amount = This Value is the amount of body parts or bones that the model has. 
+	It NEEDS to be exact to edit the model properly. If your model doesn't have a correct 
+	bone amount the Tool might tell you, but you have to make sure that the "UTILITY" Bone 
+	is the last one on the Bone List, that's the game's standard.
+	- Offset Skirt Index = This Value is automatically fixed each time that a difference is 
+	made to the model size and the Skirt Model gets moved, so don't worry about it. If your 
+	model has a weird Offset Skirt and want to fix it, just delete the Skirt Model and 
+	Reimport it and the Tool will do it automatically for you.
+	- Camera Distance = Values to set the camera position between the player and the 
+	character model.
+	- Dynamic Shader Enabled = If the character has a dynamic shader like the Super Saiyan ones.
+	- Reflection Surfaces Enabled = The Character has reflection surfaces like Baby Vegeta's Jeans 
+	or Frieza's head.
+	- Header Texture Settings = The amounts of Textures, Palettes, Shadings, and Reflective Textures 
+	that the character should have plus the ALPHA texture used.
+	
+8.c About the "PMDL 3D Parts" Zone
+	- Export Selected (.mdl) = Saves the selected part in the "Bone List" to a single .mdl file.
+	- Export All Parts (.mdl) = Saves all model parts to single .mdl files in a subfolder.
+	- Export Bone (.bne) = Saves the Bone Data of the Selected Model of the "Bone List" to a single .bne file.
+	- Export All Bones (.bne) = Saves all the bone data of each model part in a subfolder.
+	- Import Over (.mdl) = Select a .mdl File to import over the selected model part in "Bone List".
+	- Import Over (.bne) = Select a .bne File to import over the selected model part in "Bone List".
+	- Add New Model Below = Select a .mdl file to add below the selected model part in "Bone List".
+	- Delete Selected = Deletes the selected model part in "Bone List".
+	
+8.d About the "PMDL 3D Part Data" Zone
+	- ID = The Hex ID of the model part selected in "Bone List". It's relative to the Bone.
+	- Union Value = It makes the chain of Bones used for animations.
+	- Reflection = If the Model part selected is able to have reflective surfaces.
+	- Flip Selected = The model part selected gets mirrored. If the Model is a left arm it becomes a right arm, for example.
+
+8.e About the "Mesh" Zone
+	- Export Selected (.msh) = Exports all the marked Meshes in the "Mesh List" zone to a subfolder.
+	- Add All Meshes (.msh) = Select a folder that contains all of the .msh files that you want to add to the model part.
+	- Delete Mesh Selected = Deletes all the marked meshes in "Mesh List".
+	- Invert Selection = It inverts the marked items in the "Mesh List".
+	- Obj to Mesh = Special feature to support Ruisu's Method to make Model Parts in Blender.
+	- Texture ID = Texture ID of the selected Mesh in "Mesh List".
+	- Shader ID = Shader ID of the selected Mesh in "Mesh List"
+	- Apply to Selected = It applies the current ID in the relative ID Box to all the marked meshes in "Mesh List".
+	- Apply to All Meshes = It applies the current ID in the relative ID Box to all the meshes in the model part.
+	- Reflective Surface = It sets the mesh selected in "Mesh List" to be able to use reflective textures.
+	
+8.f About the "Skirt Mesh" Zone
+	- Export Skirt (.mdl) = Saves the Special Skirt Model to a single .mdl file.
+	- Export to Obj (.obj) = Saves the Special Skirt Model to a obj file.
+	- Add Skirt (.mdl) = Select a Skirt Model to add it to the model. 
+	It's not available if the current model already has a Skirt Model.
+	- Import Skirt (.obj) = Select the modifyied obj file of a Skirt Model that 
+	belongs to the skirt in the character to import it over the current Skirt Model.
+	- Delete Skirt Model = It deletes the entire Skirt Model that the character has. 
+	It's not available if the character doesn't have a Skirt Model.
+	- Texture ID = Texture ID of the selected Mesh in "Skirt Meshes" List.
+	- Shader ID = Shader ID of the selected Mesh in  "Skirt Meshes" List.
+	- Apply to All Meshes = It applies the current ID in the relative ID Box to all 
+	the meshes in the Skirt Meshes List.
+	
+8.g About the "Convert to Obj" Zone
+	- Export Complete (.obj) = Exports a single .obj file with the complete model 
+	to "My Documents" under a new folder named "OBJ Models". 
+	The Model can be split by object to see all of the individual mesh parts, 
+	or Split by Group to see each Model Part separated.
+	To Open a Obj file in Blender you have to go to "File" then "Import" and select 
+	"Wavefront (obj)". 
+	The options to import the obj with only the model parts are:
+		- Split by Object [Unchecked]
+		- Split by Group [Checked]
+	Nothing else has to be done with this option.
+	
+	The options to import the obj and see the Meshes are:
+		- Lines [Unchecked]
+		- Split by Object [Checked]
+		- Split by Group [Checked]
+	
+	- Export Selected (.obj) = Exports a single .obj file of the selected model part in "Bone List". 
+	The Model can be split by object to see all of the individual mesh parts, or Split by Group 
+	to only see the model part and his Bone Data.
+	- Export All Split (.obj) = Exports all the model parts in "Bone List" to individual .obj 
+	files in a subfolder.
+	- Import Complete (.obj) = Select the complete .obj file of the entire model to update 
+	all the model parts.The obj file can't have more or less vertex that the original part 
+	and needs to be saved with the next options checked:
+		- Split by Group/Split by Object (The one used when importing the model on Blender)
+		- Write Normals
+		- Include UVs
+		- Write Materials
+		- Keep Vertex Order
+	- Import Over (.obj) = Select the edited .obj file of the model part selected in "Bone List" 
+	to import it over. 
+	- Export Weights (.dsw) = You can export the weight data of the model part selected in 
+	"Bone List" to a .dsw file that you can use with Blender 2.8x versions to import it to
+	the model and edit it. To Import the dsw data into a model in Blender, import the model 
+	with the "Split by Group" option, select only the model part (without the bone), go to 
+	Vertex Options and click the "+" Button to add a Vertex Group, then import the dsw file.
+	- Import Weights (.dsw) = Select the edited .dsw file with the weight data of the model 
+	part selected in "Bone List".
+	- Export Complete Weights (.dsw) = You can export the weight data for the entire model 
+	to a .dsw file. To use it with the "Export Complete (.obj) function, you don't have to 
+	split the model at all, keep it in one single part and import the .dsw file to see the 
+	entire weight data applied to the model. It's only meant to be used for testing and 
+	verification processes.
+	
+8.h About the Map's 3D Model Data
+	To Export a Map's 3D Model, you have to open the first file of an 
+	Unpacked map (00_map_main_data.mdl) and use the "Export Model (.obj)" button to export 
+	the model to "My Documents" under a new folder named "OBJ Models". Import it 
+	in Blender with only the option "Split by Group" selected. To save it, save it 
+	with the next options checked:
+		- Split by Group
+		- Apply Modifiers
+		- Write Normals
+		- Include UVs
+		- Keep Vertex Order
+	To Import a modified map's 3D Model, use the "Import Model (.obj)" button.
+	
+	NOTE: If you can't see all of the map's model, in version 2.8x and later press "n", 
+	select "view" and increase the "Clip End" parameter to 1.000.000m or more if needed.
+
+8.i About the Map's Import File Option
+	The new Map's "Import File" Replaces a Sub Section of the Opened Map File with a pre-made
+	sub section file made by the user and fixes all of the Index Data after that file.
+	It only fixes Map_main_data files that applies the usual structure standards.
+	The name of the file has to have the Sub Section ID on the name of the file, for ex:
+	"06_Rendering.bin" any extension works.
+	List of IDs:
+	00 - Sprite Animation Table
+	01 - Debris Animation Table
+	02 - Model Data Table
+	03 - RAM Section
+	04 - POV Rendering Table
+	05 - DBT Section
+	06 - Main Rendering Section
+	07 - Collision Data Table
+	08 - Debris Data Table Section
+	
+9.a How to open a VAG Sound Container
+	First you have to Unpack the pak file that contains the VAG Audios, 
+	then you have to go to "File" then "Open" and select the "01_header_data.snd" file.
+	If it is an Character_Voice.pak/Character_VAG.pak file, it will detect it and 
+	name all the audios in the list.
+	
+9.b How to Change the Sampling Frequency of a Vag Audio
+	Just select the audio you want to change his sampling frequency and change the 
+	value in the Box under "Audio Settings and Utilities".
+
+9.c How to Export a Vag Audio to a File.
+	Select the audio in the list and click the "Export" Button.
+	
+9.d How to Export all audios to a folder
+	Click the "Export All" Button.
+	
+9.e How to Import a Vag Audio to the VAG Container
+	Select the Audio you want to replace and click the "Import" Button. 
+	The new Audio has to have the "Vagp Header", it will import the Frequency 
+	data that it has and it will be deleted automatically, and has to have the 
+	end flag (XX XX 77 77 77...), it will not be added automatically because it 
+	can be a compressed or uncompressed ADPCM data (07 00 for uncompressed ADPCM 
+	and 00 07 for compressed ADPCM) and the tool can not automatically detect that.
+	
+9.f How to Import all audios from a folder into the VAG Container.
+	Click on the "Import All" button and select the folder containing all the .vag audios.
+	The audios on the folder NEEDS to be named after the slot it will replace, 
+	starting from 0, for example "0.vag, 1.vag, 5.vag, 7.vag. 013.vag", etc.
+	The audios needs to have the Vagp Header with the Frequency data and the end flag. 
+	The Vagp header will be automatically deleted.
+
+10.a How to Change the Settings
+	In the "File" option, you can access the "Settings" Menu now, there you will find
+	many new settings to mess with and they will be saved for your personal preferences.
+
+	The "Engine Mode" Settings let you change the Engine to "Little Endian" or "Big Endian"
+	to properly Unpack and repack Wii and PS2 Files. The Raging Blast option it's work 
+	in progress.
+
+	The "Assets" Settings change the images and names used in the program, which you can 
+	fully customize to your liking in the "resource\txt" and "resource\images" folders. 
+	Be careful, as this is needed for some editors to work as intended!
+
+	Finally, the "Delete File at Unpack" like its name says lets you delete files 
+	automatically when you Unpack any file.

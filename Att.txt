@@ -1,0 +1,3 @@
+BT Studio v1:
+ - Tradução Português (10%)
+ - Suporte para personagens extras (30%)

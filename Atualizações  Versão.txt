@@ -1,0 +1,8 @@
+Sparking Studio (BT Studio) Build - Histórico de Atualizações
+
+Sparking Studio v6
+- Versão final (Sem mais atualizações)
+- Correções:
+	- DBT Editor
+	- Packing Methods
+	- Model Editor

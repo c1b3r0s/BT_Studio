@@ -1,0 +1,68 @@
+000 - The Meteor
+001 - Vital Burner
+002 - Innocent World
+003 - After The Fire
+004 - Sweet Vibration 
+005 - Survive 
+006 - Heat Capacity
+007 - Overture 
+008 - Shine 
+009 - Power Scale 
+010 - Edge of Spirit 
+011 - Caution!
+012 - Menace
+013 - Hot Soul
+014 - High And Scream
+015 - Shootout in Meteor
+016 - Dynamite Battle
+017 - Burnin' Up
+018 - Wild Rush
+019 - Evolution
+020 - GameSecret_00
+021 - GameSecret_01
+022 - GameSecret_02
+023 - GameSecret_03
+024 - Extra_00
+025 - Extra_01
+026 - Extra_02
+027 - Extra_03
+028 - Extra_04
+029 - Extra_05
+030 - Extra_06
+031 - Extra_07
+032 - Extra_08
+033 - Extra_09
+034 - Extra_10
+035 - Extra_11
+036 - Extra_12
+037 - Extra_13
+038 - Extra_14
+039 - Extra_15
+040 - Extra_16
+041 - Extra_17
+042 - Extra_18
+043 - Extra_19
+044 - Extra_20
+045 - Extra_21
+046 - Extra_22
+047 - Extra_23
+048 - Extra_24
+049 - Extra_25
+050 - Extra_26
+051 - Extra_27
+052 - Extra_28
+053 - Extra_29
+054 - Extra_30
+055 - Extra_31
+056 - Extra_32
+057 - Extra_33
+058 - Extra_34
+059 - Extra_35
+060 - Extra_36
+061 - Extra_37
+062 - Random
+063 - Sem_Uso
+064 - Sem_Uso
+065 - Sem_Uso
+066 - Sem_Uso
+067 - Sem_Uso
